@@ -52,8 +52,6 @@ def LU(mat):
         l += u_mats[i]
     l -= np.identity(MAT_SIZE) * len(u_mats)
 
-
-
     return l, u
 
 
@@ -70,9 +68,9 @@ def main():
     print(f'b:\n{b}')
     print(f'U:\n{u}')
     print(f'L:\n{l}')
-    # print(f'our a:\n{np.matmul(l, u)}')
     print(f'x:{x}')
-
+    print(l_inv)
+    print(u_inv)
 
 
 if __name__ == '__main__':
